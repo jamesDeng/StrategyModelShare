@@ -22,5 +22,9 @@ public class Main {
 		System.out.println("\r\n=================更加蓝牙锁为GPRS+蓝牙开锁测试====================");
 		bluetoothLock.setUnlockMethod(new GPRSBluetoothUnlock());
 		bluetoothLock.unlock();
+		
+		
+		Lock lock=new Lock(new GPRSBluetoothUnlock());
+		
 	}
 }
